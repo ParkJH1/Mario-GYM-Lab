@@ -29,8 +29,6 @@ class MyApp(QWidget):
         label_image.setPixmap(pixmap)
         label_image.setGeometry(0, 0, 100, 100)
 
-        self.show()
-
 
 def exception_hook(except_type, value, traceback):
     print(except_type, value, traceback)
@@ -42,4 +40,5 @@ if __name__ == '__main__':
     sys.excepthook = exception_hook
     app = QApplication(sys.argv)
     window = MyApp()
+    window.show()
     sys.exit(app.exec())
