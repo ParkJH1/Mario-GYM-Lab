@@ -7,7 +7,6 @@ class MyApp(QWidget):
         super().__init__()
         self.setFixedSize(400, 300)
         self.setWindowTitle('MyApp')
-        self.show()
 
 
 def exception_hook(except_type, value, traceback):
@@ -20,4 +19,5 @@ if __name__ == '__main__':
     sys.excepthook = exception_hook
     app = QApplication(sys.argv)
     window = MyApp()
+    window.show()
     sys.exit(app.exec())
