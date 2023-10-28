@@ -1,6 +1,4 @@
-from PyQt6.QtGui import QImage, QPixmap, QPainter, QPen, QBrush, QColor
-from PyQt6.QtCore import Qt, QThread, pyqtSignal
-from PyQt6.QtWidgets import QApplication, QVBoxLayout, QHBoxLayout, QLabel, QWidget, QPushButton, QComboBox, QTabWidget, QListWidget, QFormLayout, QLineEdit
+from PyQt6.QtWidgets import QApplication, QWidget, QPushButton, QComboBox
 import sys
 
 
