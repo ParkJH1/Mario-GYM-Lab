@@ -9,7 +9,7 @@ class MyApp(QWidget):
     def __init__(self):
         super().__init__()
         self.setFixedSize(400, 300)
-        self.setWindowTitle('GA Mario')
+        self.setWindowTitle('MyApp')
 
         button = QPushButton(self)
         button.setText('버튼')
