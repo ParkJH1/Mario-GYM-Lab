@@ -1,4 +1,5 @@
 import numpy as np
+import os
 
 
 def relu(x):
@@ -6,7 +7,7 @@ def relu(x):
 
 
 def sigmoid(x):
-    return 1.0 / (1.0 + np.exp(-x))
+    return 1.0 / (1.0 + np.exp(-np.maximum(-700, x)))
 
 
 class Model:
@@ -35,7 +36,13 @@ if __name__ == '__main__':
     data = [i for i in range(13 * 16)]
     model.predict(data)
 
-    np.save('../model/w1.npy', model.w1)
-    np.save('../model/b1.npy', model.b1)
-    np.save('../model/w2.npy', model.w2)
-    np.save('../model/b2.npy', model.b2)
+    if not os.path.exists('../model'):
+        os.mkdir('../model')
+
+    if not os.path.exists('../model/my_model'):
+        os.mkdir('../model/my_model')
+
+    np.save('../model/my_model/w1.npy', model.w1)
+    np.save('../model/my_model/b1.npy', model.b1)
+    np.save('../model/my_model/w2.npy', model.w2)
+    np.save('../model/my_model/b2.npy', model.b2)
