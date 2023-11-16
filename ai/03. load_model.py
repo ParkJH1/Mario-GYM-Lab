@@ -6,7 +6,7 @@ def relu(x):
 
 
 def sigmoid(x):
-    return 1.0 / (1.0 + np.exp(-x))
+    return 1.0 / (1.0 + np.exp(-np.maximum(-700, x)))
 
 
 class Model:
@@ -32,10 +32,10 @@ class Model:
 if __name__ == '__main__':
     model = Model()
 
-    model.w1 = np.load('../model/w1.npy')
-    model.b1 = np.load('../model/b1.npy')
-    model.w2 = np.load('../model/w2.npy')
-    model.b2 = np.load('../model/b2.npy')
+    model.w1 = np.load('../model/my_model/w1.npy')
+    model.b1 = np.load('../model/my_model/b1.npy')
+    model.w2 = np.load('../model/my_model/w2.npy')
+    model.b2 = np.load('../model/my_model/b2.npy')
 
     data = [i for i in range(13 * 16)]
     model.predict(data)
