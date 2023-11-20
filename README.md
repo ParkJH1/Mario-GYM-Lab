@@ -6,7 +6,9 @@ pip install -r requirements.txt
 ```
 
 ## 구글 문서
-[https://docs.google.com/document/d/1T1mhF3qW0l1YK8frAZC0MiZD7PE42u_escomZevTzQw/edit?usp=sharing](https://docs.google.com/document/d/1T1mhF3qW0l1YK8frAZC0MiZD7PE42u_escomZevTzQw/edit?usp=sharing)
+<a href="https://docs.google.com/document/d/1T1mhF3qW0l1YK8frAZC0MiZD7PE42u_escomZevTzQw" target="_blank">
+    https://docs.google.com/document/d/1T1mhF3qW0l1YK8frAZC0MiZD7PE42u_escomZevTzQw
+</a>
 
 ## Mario GYM Lab 폴더 구조
 
