@@ -1,7 +1,7 @@
 import sys
-from PyQt6.QtGui import QImage, QPixmap, QPainter, QBrush, QPen, QColor
+from PyQt6.QtGui import QPainter, QBrush, QPen, QColor
 from PyQt6.QtCore import Qt
-from PyQt6.QtWidgets import QApplication, QWidget, QLabel
+from PyQt6.QtWidgets import QApplication, QWidget
 import retro
 import numpy as np
 
